@@ -1,0 +1,30 @@
+public class TestCylinder {
+    public static void main(String[] args) {
+        Cylinder cylinder1 = new Cylinder();
+        System.out.println("Cylinder: "
+                + "radius=" + cylinder1.getRadius()
+                + " height=" + cylinder1.getHeight()
+                + " base area=" + cylinder1.getArea()
+                + " volume=" + cylinder1.getVolume());
+        Cylinder cylinder2 = new Cylinder(10.0);
+        System.out.println("Cylinder:"
+                + " radius=" + cylinder2.getRadius()
+                + " height=" + cylinder2.getHeight()
+                + " base area=" + cylinder2.getArea()
+                + " volume=" + cylinder2.getVolume());
+        Cylinder cylinder3 = new Cylinder(2.0,10.0);
+        System.out.println("Cylinder:"
+                + " radius=" + cylinder3.getRadius()
+                + " height=" + cylinder3.getHeight()
+                + " base area=" + cylinder3.getArea()
+                + " volume=" + cylinder3.getVolume());
+        //Cylinder temp = new Cylinder();
+        //Circle shape3 = (Circle) temp; //upcasting
+        Cylinder shape3 = new Cylinder();
+        System.out.println(shape3);
+        System.out.println(shape3.getArea());
+        if (shape3 instanceof Cylinder) {
+            System.out.println(((Cylinder) shape3).getVolume());
+        }
+    }
+}
